@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Appiah</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm [APPIAGYEI ASIEDU]</h1>
+      <p>Web Developer | Designer | Freelancer</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="web">Web</button>
+      <button class="filter-btn" data-category="design">Design</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card" data-category="web">
+        <h3>Website Project</h3>
+        <p>Responsive website with HTML, CSS, JS.</p>
+      </div>
+      <div class="project-card" data-category="design">
+        <h3>Design Mockup</h3>
+        <p>UI/UX design using Figma and Adobe XD.</p>
+      </div>
+      <div class="project-card" data-category="web">
+        <h3>Portfolio Site</h3>
+        <p>Interactive portfolio using JavaScript animations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Appiagyei Asiedu is a dedicated networking student with a strong foundation
+         in computer networks, protocols, and security. Passionate about designing, 
+         managing, and troubleshooting network infrastructures, I am eager to apply
+          my knowledge in real-world environments. Skilled in configuring routers, 
+          switches, and firewalls, I am committed to continuous learning and staying 
+          updated with the latest 
+        technologies in network administration and cybersecurity.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="form-msg"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
